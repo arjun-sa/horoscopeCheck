@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href = "multipleChecks.css"></link>
+    <title>multiple checkeroos</title>
+    <script>
+      function check()
+      {
+        var name = document.getElementById('resp').value;
+        var msg = " ";
+        if(name == "jon")
+            {
+              msg = "that's an awesome name";
+            }
+        else if (name == "jan")
+            {
+              msg = "thats like the girl version of my name";
+            }
+      else if (name == "joe")
+            {
+              msg = "thats like my name with an e";
+            }
+      else
+            {
+              msg = "nice name"
+            }
+      }
+      function horo()
+      {
+        var month = parseInt(document.getElementById('month').value);
+        var day = parseInt(document.getElementById('day').value);
+        var msg = " ";
+
+          if(month == 1)
+          {
+            if(0 < day <= 19)
+            {
+              msg = "You're Horoscope is Capricorn!";
+              capricorn();
+            }
+            else if(31 >= day >= 20)
+            {
+              msg = "You're Horoscope is Aquarius";
+              aquarius();
+            }
+            else
+            {
+              msg = "bruh type a real date";
+
+            }
+          }
+          else if(month == 2)
+          {
+            if(0 < day <= 18)
+            {
+              msg = "You're Horoscope is Aquarius!";
+              aquarius();
+            }
+            else if(31 >= day >= 19)
+            {
+              msg = "You're Horoscope is Pisces";
+              pisces();
+            }
+            else
+            {
+              msg = "bruh type a real date";
+            }
+          }
+          else if(month == 3)
+          {
+            if(0 < day <= 20)
+            {
+              msg = "You're Horoscope is Pisces!";
+              pisces();
+            }
+            else if(31 >= day >= 21)
+            {
+              msg = "You're Horoscope is Aries";
+              aries();
+            }
+            else
+            {
+              msg = "bruh type a real date";
+            }
+          }
+          else if(month == 4)
+          {
+            if(0 < day <= 19)
+            {
+              msg = "You're Horoscope is Aries!";
+              aries();
+            }
+            else if(31 >= day >= 20)
+            {
+              msg = "You're Horoscope is Taurus!";
+              taurus();
+            }
+            else
+            {
+              msg = "bruh type a real date";
+            }
+          }
+          else if(month == 5)
+          {
+            if(0 < day <= 20)
+            {
+              msg = "You're Horoscope is Taurus!";
+              taurus();
+            }
+            else if(31 >= day >= 21)
+            {
+              msg = "You're Horoscope is Gemini!";
+              gemini();
+            }
+            else
+            {
+              msg = "bruh type a real date";
+            }
+          }
+          else if(month == 6)
+          {
+            if(0 < day <= 20)
+            {
+              msg = "You're Horoscope is Gemini!";
+              gemini();
+            }
+            else if(31 >= day >= 21)
+            {
+              msg = "You're Horoscope is Cancer!";
+              cancer();
+            }
+            else
+            {
+              msg = "bruh type a real date";
+            }
+          }
+          else if(month == 7)
+          {
+            if(0 < day <= 22)
+            {
+              msg = "You're Horoscope is Cancer!";
+              cancer();
+            }
+            else if(31 >= day >= 23)
+            {
+              msg = "You're Horoscope is Leo";
+              leo();
+            }
+            else
+            {
+              msg = "bruh type a real date";
+            }
+          }
+          else if(month == 8)
+          {
+            if(0 < day <= 22)
+            {
+              msg = "You're Horoscope is Leo!";
+              leo();
+            }
+            else if(31 >= day >= 23)
+            {
+              msg = "You're Horoscope is Virgo!";
+              virgo();
+            }
+            else
+            {
+              msg = "bruh type a real date";
+            }
+          }
+          else if(month == 9)
+          {
+            if(0 < day <= 22)
+            {
+              msg = "You're Horoscope is Virgo!";
+              virgo();
+            }
+            else if(31 >= day >= 23)
+            {
+              msg = "You're Horoscope is Libra!";
+              libra();
+            }
+            else
+            {
+              msg = "bruh type a real date";
+            }
+          }
+          else if(month == 10)
+          {
+            if(0 < day <= 22)
+            {
+              msg = "You're Horoscope is Libra!";
+              libra();
+            }
+            else if(31 >= day >= 23)
+            {
+              msg = "You're Horoscope is Scorpio!";
+              scorpio();
+            }
+            else
+            {
+              msg = "bruh type a real date";
+            }
+          }
+          else if (month == 11)
+          {
+            if(0 < day <= 21)
+            {
+              msg = "You're Horoscope is Scorpio!";
+              scorpio();
+            }
+            else if(31 >= day >= 22)
+            {
+              msg = "You're Horoscope is Sagittarius!";
+              sagittarius();
+            }
+            else
+            {
+              msg = "bruh type a real date";
+            }
+          }
+          else if (month == 12)
+          {
+            if(0 < day <= 21)
+            {
+              msg = "You're Horoscope is Sagittarius!";
+              sagittarius();
+            }
+            else if(31 >= day > 22)
+            {
+              msg = "You're Horoscope is Capricorn!";
+              capricorn();
+            }
+            else
+            {
+              msg = "bruh type a real date";
+            }
+          }
+          else
+          {
+            msg = "try again buddy";
+          }
+
+      }
+      function capricorn()
+      {
+        document.getElementById("msg").innerHTML = "Things may be happening too fast around you today, Capricorn, but that doesn't mean you necessarily have to join the frenzied pace. You're probably much better off sticking with your methodical approach. Take the time to collect the facts you need before you jump into a major decision or plan of attack. People may be a bit jumpy, so do your best to be the stable one in the group.";
+        var pic = "<img src = 'capricorn.jpg' width = '200px' height = '200px'/>";
+        document.getElementById("pic").innerHTML = pic;
+      }
+      function aquarius()
+      {
+        document.getElementById("msg").innerHTML = "Make sure you aren't projecting a picture of yourself that doesn't represent the real you, Aquarius. It's important that you remain true to your soul or you'll end up in situations that make you uncomfortable and frustrated. There's a strong transformative force working against you today, but you'll have the leadership and confidence to stand up for yourself in whatever way you need.";
+        var pic = "<img src = 'aquarius.jpg' width = '200px' height = '200px'/>";
+        document.getElementById("pic").innerHTML = pic;
+
+      }
+      function pisces()
+      {
+        document.getElementById("msg").innerHTML = "Remind yourself of all the positive things you have going on in your life now, Pisces. It's possible that you'll be met with tension and challenges today that are threatening your sense of self. Arguments may break out around you, and you may have questions regarding what it is you stand for. Don't lose touch with your nurturing qualities and sixth sense.";
+        var pic = "<img src = 'pisces.jpg' width = '200px' height = '200px'/>";
+        document.getElementById("pic").innerHTML = pic;
+      }
+      function aries()
+      {
+        document.getElementById("msg").innerHTML = "The fire within you is burning extra hot, Aries, so make the most of this incredible internal furnace. Treat yourself to some new attire and proudly show it off tonight. Take the lead on projects that might be floundering. You have power behind your words and actions today, so use it for the highest good.";
+        var pic = "<img src = 'aries.jpg' width = '200px' height = '200px'/>";
+        document.getElementById("pic").innerHTML = pic;
+      }
+      function taurus()
+      {
+        document.getElementById("msg").innerHTML = "You may feel the urge to get up and go today, Taurus, but at the same time you may feel like you aren't prepared. Perhaps you don't feel you're on solid enough ground to take the next step. Don't let the pressure of the outside world move you to a place you aren't ready to go. Take things at your own pace, and be tolerant of those who choose to go at theirs.";
+        var pic = "<img src = 'taurus.jpg' width = '200px' height = '200px'/>";
+        document.getElementById("pic").innerHTML = pic;
+      }
+      function gemini()
+      {
+        document.getElementById("msg").innerHTML = "Tension is building today that may wreak havoc with your harmonious nature, Gemini. The key for you now is to see the opportunity instead of conflict in each situation. This is a good time to gain a greater perspective on certain things. A bit of internal transformation may take place when you see things from the other side of the fence.";
+        var pic = "<img src = 'gemini.jpg' width = '200px' height = '200px'/>";
+        document.getElementById("pic").innerHTML = pic;
+      }
+      function cancer()
+      {
+        document.getElementById("msg").innerHTML = "You may feel extra passionate today, Cancer, so don't be surprised if you take things to extremes even more than usual. There's an aggression within you that's working to help keep you in control of every situation. Remember that you must be prepared to receive whatever you dish out. There's a warring instinct in everyone that's likely to emerge on a day like this.";
+        var pic = "<img src = 'cancer.jpg' width = '200px' height = '200px'/>";
+        document.getElementById("pic").innerHTML = pic;
+      }
+      function leo()
+      {
+        document.getElementById("msg").innerHTML = "Find your strength from within, Leo. There's a great deal of it in there, and it's ready to erupt like a volcano. Let your passion drive your engine today and you'll be amazed at the incredible places you can go. Don't be afraid to take things to extremes. Your fantastic good luck will pull you out of any sticky predicament.";
+        var pic = "<img src = 'leo.jpg' width = '200px' height = '200px'/>";
+        document.getElementById("pic").innerHTML = pic;
+      }
+      function virgo()
+      {
+        document.getElementById("msg").innerHTML = "Your strong yet steady pace may get a lift today, Virgo. It might seem like there's a fire under your feet, and you probably need to keep moving in order to keep yourself from getting burned. Use your independent streak to get things done the way you want them. This could be a powerhouse day for you!";
+        var pic = "<img src = 'virgo.jpg' width = '200px' height = '200px'/>";
+        document.getElementById("pic").innerHTML = pic;
+      }
+      function libra()
+      {
+        document.getElementById("msg").innerHTML = "There's excitement today that indicates that things are happening, things are changing. Stay alert and in tune with what's going on around you, Libra. There's a wonderful energy charge urging you to push the boundaries of everything going on around you. Do your part to help the world evolve to a happier, more peaceful place.";
+        var pic = "<img src = 'libra.jpg' width = '200px' height = '200px'/>";
+        document.getElementById("pic").innerHTML = pic;
+      }
+      function scorpio()
+      {
+        document.getElementById("msg").innerHTML = "You're the sensitive one in a sea of anger today, Scorpio, so keep your guard up. Don't be tempted or seduced by any rage around you. Be wary of people who seem motivated by fear. You'll be much better off when you align yourself with those who act from a point of neutrality and self-confidence. Model your behavior after the people you see as superheroes in your world.";
+        var pic = "<img src = 'scorpio.jpg' width = '200px' height = '200px'/>";
+        document.getElementById("pic").innerHTML = pic;
+      }
+      function sagittarius()
+      {
+        document.getElementById("msg").innerHTML = "You should mesh quite well with the prevailing energy today, Sagittarius. There's a powerful, transformative force helping to give greater strength to your ego and vitality. Note the fiery energy about the day that encourages your dynamic and forceful personality to shine through. Feel free to express your independence in every situation.";
+        var pic = "<img src = 'sagittarius.jpg' width = '200px' height = '200px'/>";
+        document.getElementById("pic").innerHTML = pic;
+      }
+
+
+      </script>
+
+  </head>
+  <body>
+
+      <p>Find your Horoscope</p>
+      <input id = "month" type = "text" value = "month">
+      <input id = "day" type = "text" value = "day">
+      <input type = "button" value ="Click" onclick="horo()">
+      <br><hr>
+      <span id = "msg"></span>
+      <br></br>
+      <span id = "pic"></span>
+
+  </body>
+</html>
